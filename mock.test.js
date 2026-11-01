@@ -8,6 +8,7 @@ describe('Mock function testing', () => {
     expect(sendEmail).toHaveBeenCalledWith('user@example.com');
     expect(sendEmail).toHaveBeenCalledTimes(1);
   });
+  
 
   test('mock function can return a value', () => {
     const getUser = jest.fn().mockReturnValue({
