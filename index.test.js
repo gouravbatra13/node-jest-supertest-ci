@@ -12,7 +12,7 @@ describe('GET routes', () => {
     test('GET /about returns the about page message', async () => {
         const response = await request(app).get('/about')
 
-        expect(response.status).toBe(2)
+        expect(response.status).toBe(200)
         expect(response.text).toBe('About')
     })
 
