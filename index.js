@@ -8,6 +8,7 @@ app.use(express.json());
 
 app.get('/', (req, res) => res.send('Hello world1'));
 app.get('/about', (req, res) => res.send('About'));
+app.get('/manual-trigger', (req, res) => res.send('Manual Trigger'));
 app.post('/tasks', (req, res) =>{
     const { title, description } = req.body;
     if (!title) {
